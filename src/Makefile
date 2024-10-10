@@ -10,7 +10,7 @@ ifeq ($(shell uname -s), Linux)
 	LINK_FLAGS += -lm -lsubunit
 endif
 
-all: s21_math.a test gcov_report
+all: clean s21_math.a
 
 s21_math.a:
 	$(CC) $(FLAGS) -c $(MATH)
